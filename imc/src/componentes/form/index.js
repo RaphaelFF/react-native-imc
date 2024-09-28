@@ -4,18 +4,18 @@ import { StyleSheet } from "react-native";
 
 export default function Form() {
   return (
-    <View>
-        <View style={styles.container}>
+    <View style={styles.container}>
+        <View style={styles.inputContainer}>
             <Text style={styles.text}>Altura</Text>
 
-            <TextInput style={styles.inputContainer}
+            <TextInput style={styles.input}
             placeholder="ex: 1.80"
             keyboardType="numeric"
             ></TextInput>
 
             <Text style={styles.text}>Peso</Text>
 
-            <TextInput style={styles.inputContainer}
+            <TextInput style={styles.input}
             placeholder="ex: 85.3"
             keyboardType="numeric"
             ></TextInput>
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   inputContainer: {
-    margin: 10,
+    margin: 50,
   },
   text: {
     fontSize: 18,
@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
+    width: 200,
     borderColor: 'gray',
     borderWidth: 1,
     padding: 10,
