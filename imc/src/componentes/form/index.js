@@ -1,11 +1,11 @@
 import React from "react";
-import { Text, TextInput, View } from "react-native";
+import { Text, TextInput, View, Button } from "react-native";
 import { StyleSheet } from "react-native";
 
 export default function Form() {
   return (
-    <View style={styles.container}>
-        <View style={styles.inputContainer}>
+    <View >
+        <View >
             <Text style={styles.text}>Altura</Text>
 
             <TextInput style={styles.input}
@@ -19,6 +19,8 @@ export default function Form() {
             placeholder="ex: 85.3"
             keyboardType="numeric"
             ></TextInput>
+
+            <Button title="Calcular IMC"/>
         </View>
     </View>
   );
